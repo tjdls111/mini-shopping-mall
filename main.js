@@ -18,7 +18,7 @@ function addList(gender,size,color,style)
         item.className+=` skirt`;
     }
     else if (style=='t'){
-        item.className+=` tshirt`;
+        item.className+=` shirt`;
     }
     item.innerHTML=`<img src="imgs/${color}_${style}.png" alt="">
        ${gender}, ${size} size`;
@@ -61,7 +61,7 @@ const yellowBtn=document.querySelector('.yellow');
 const blueBtn=document.querySelector('.blue');
 
 buttons.addEventListener('click',(event)=>{
-    console.log(event.target.classList.value);
-    select(event.target.classList.value);
+    console.log(event.target.classList.value.slice(0,5));
+    select(event.target.classList.value.slice(0,5));
     
 });

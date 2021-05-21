@@ -45,3 +45,7 @@ nav{
 li{
     list-style-type: none;
 }
+
+.Btn{
+    cursor:pointer;
+}
