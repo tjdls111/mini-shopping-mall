@@ -20,7 +20,7 @@ function addList(gender,size,color,style)
     else if (style=='t'){
         item.className+=` shirt`;
     }
-    item.innerHTML=`<img src="imgs/${color}_${style}.png" alt="">
+    item.innerHTML=`<img class='item_img' src="imgs/${color}_${style}.png" alt="">
        ${gender}, ${size} size`;
     Main.appendChild(item);
 }
