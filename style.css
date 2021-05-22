@@ -48,6 +48,11 @@ li{
 
 .Btn{
     cursor:pointer;
+    transition: transform 300ms ease-in;
+}
+
+.Btn:hover{
+    transform:scale(1.1);
 }
 
 .logo{
