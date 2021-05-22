@@ -35,7 +35,12 @@ addList('male','large','blue','t');
 addList('male','large','blue','t');
 addList('female','small','blue','p');
 addList('female','medium','yellow','p');
-
+addList('male','large','blue','t');
+addList('female','small','blue','p');
+addList('female','medium','yellow','p');
+addList('male','large','blue','t');
+addList('female','small','blue','p');
+addList('female','medium','yellow','p');
 
 function select(colorOrStyle){
 
