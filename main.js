@@ -66,10 +66,10 @@ function select(colorOrStyle){
 
     for (let i of items){
         if (i.className.includes(colorOrStyle)){
-            i.setAttribute('style','visibility:visible');
+            i.setAttribute('style','display:block');
         }
         else {
-            i.setAttribute('style','visibility:hidden');
+            i.setAttribute('style','display:none');
         }
       }};
     
@@ -77,6 +77,6 @@ function displayAll(){
 
 
     for (let i of items){
-        i.setAttribute('style','visibility:visible');
+        i.setAttribute('style','display:block');
       }};
 
