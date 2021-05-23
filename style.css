@@ -65,12 +65,12 @@ li{
     list-style-type: none;
 }
 
-.Btn{
+.Btn, .logo{
     cursor:pointer;
-    transition: transform var(--animation-duration) ease-in;
+    transition: transform var(--animation-duration) ease;
 }
 
-.Btn:hover{
+.Btn:hover, .logo:hover{
     transform:scale(1.1);
 }
 

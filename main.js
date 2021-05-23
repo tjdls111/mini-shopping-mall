@@ -11,6 +11,8 @@ const blueBtn=document.querySelector('.blue');
 
 const Main=document.querySelector('.box');
 const buttons=document.querySelector('nav');
+const logo=document.querySelector('.logo');
+const items=document.getElementsByTagName('li');
 
 
 function loadItems() {
@@ -29,17 +31,16 @@ loadItems()
         addList(tmp.gender,tmp.size,tmp.color,tmp.type[0]);
     }
 
+    logo.addEventListener('click',()=>{
+        displayAll();
+    })
     buttons.addEventListener('click',(event)=>{
-        console.log(event.target.classList.value.slice(0,5));
         select(event.target.classList.value.slice(0,5)); 
     });
-
 })
 .catch(console.log);
 
 
-
-console.log(Main);
 function addList(gender,size,color,style)
 {
     const item=document.createElement('li');
@@ -61,13 +62,9 @@ function addList(gender,size,color,style)
 }
 
 
-
 function select(colorOrStyle){
 
-    const items=document.getElementsByTagName('li');
-    console.log(items);
     for (let i of items){
-        console.log(i.className);
         if (i.className.includes(colorOrStyle)){
             i.setAttribute('style','visibility:visible');
         }
@@ -76,3 +73,10 @@ function select(colorOrStyle){
         }
       }};
     
+function displayAll(){
+
+
+    for (let i of items){
+        i.setAttribute('style','visibility:visible');
+      }};
+
